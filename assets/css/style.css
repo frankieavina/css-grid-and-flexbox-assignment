@@ -13,15 +13,15 @@
 }
 
 .question1 .Home1{
-  width: 100%;
+  flex-grow: 1;
 }
 
 .question1 .Search1{
-  width: 100%;
+  flex-grow: 1;
 }
 
 .question1 .Logout1{
-  width: 100%;
+  flex-grow: 1;
 }
 
 /*(2) Your answer goes below here for question #2 please use the border below */
@@ -110,22 +110,66 @@
 /*(7) Your answer goes below here for question #7 please use the border below */
 /* border: 3px solid #139dc2; */
 
+.question7{
+  border: 3px solid #139dc2;
+  display: grid; 
+  font-size: 0;
+  grid-template-columns: repeat(7, 1fr);
+}
 
 /*(8) Your answer goes below here for question #8 please use the border & background below */
 /* border: 3px solid #7b8ac7; */
 /* background-color: #bad3e2; */
 
+/* Repeat: 
+Represents a repeated fragment of the track list, 
+allowing a large number of columns that exhibit a 
+recurring pattern to be written in a more compact form. */
+
+.question8{
+  display: grid; 
+  border: 3px solid #139dc2;
+  grid-template-columns: repeat(3, 1fr);
+}
 
 /*(9) Your answer goes below here for question #9 please use the border & background below */
 /* border: 3px solid #7b8ac7; */
 /* background-color: #bad3e2; */
 
+.question9{
+  display: grid; 
+  border: 3px solid #7b8ac7;
+  background-color: #bad3e2;
+  grid-template-columns: repeat(4, 1fr);
+}
 
 /*(10) Your answer goes below here for question #10 please use the border & background below */
 /* border: 3px solid #b8f9df; */
 /* background-color: #bad3e2; */
 
+.question10{
+  background-color: #bad3e2;
+  border: 3px solid #7b8ac7;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
 
 /*(11) Your answer goes below here for question #11 please use the border & background below */
 /* border: 3px solid #7f798a; */
 /* background-color: #bad3e2; */
+
+header{ grid-area: header; }
+aside{ grid-area: menu;}
+main{ grid-area: content;}
+footer{ grid-area: footer;}
+
+.question11{
+  display: grid;
+  border: 3px solid #7f798a;
+  background-color: #bad3e2;
+  grid-template-areas: 
+  'header header header header header header'
+  'menu content content content content content'
+  'footer footer footer footer footer footer'
+  ;
+}
